@@ -312,114 +312,66 @@
             2021: [
                 ['Erling Haaland', 10],
                 ['Robert Lewandowski', 0],
-                ['Australia', 0],
-                ['Germany', 11],
-                ['Russia', 24],
-                ['China', 38],
-                ['Great Britain', 29],
-                ['United States', 46]
+                ['Lionel Andrés Messi', 5],
+                ['Cristiano Ronaldo', 4]
             ],
             2020: [
             ['Erling Haaland', 8],
-                ['Robert Lewandowski', 13],
-                ['Japan', 0],
-                ['Australia', 0],
-                ['Germany', 0],
-                ['Russia', 22],
-                ['China', 51],
-                ['Great Britain', 19],
-                ['United States', 36]
+                ['Robert Lewandowski', 5],
+                ['Lionel Andrés Messi', 3],
+                ['Cristiano Ronaldo', 4]
             ],
             2019: [
             ['Erling Haaland', 8],
-                ['Robert Lewandowski', 0],
-                ['Japan', 0],
-                ['Australia', 0],
-                ['Germany', 13],
-                ['Russia', 27],
-                ['China', 32],
-                ['Great Britain', 9],
-                ['United States', 37]
+                ['Robert Lewandowski', 15],
+                ['Lionel Andrés Messi', 3],
+                ['Cristiano Ronaldo', 6]
             ],
             2018: [
             ['Erling Haaland', 0],
-                ['Robert Lewandowski', 0],
-                ['Japan', 5],
-                ['Australia', 16],
-                ['Germany', 0],
-                ['Russia', 32],
-                ['China', 28],
-                ['Great Britain', 0],
-                ['United States', 36]
+                ['Robert Lewandowski', 8],
+                ['Lionel Andrés Messi', 12],
+                ['Cristiano Ronaldo', 15]
             ],
             2017: [
               ['Erling Haaland', 0],
-                ['Robert Lewandowski', 0],
-                ['Japan', 0],
-                ['Australia', 9],
-                ['Germany', 20],
-                ['Russia', 26],
-                ['China', 16],
-                ['Great Britain', 0],
-                ['United States', 44]
+                ['Robert Lewandowski', 5],
+                ['Lionel Andrés Messi', 6],
+                ['Cristiano Ronaldo', 1]
             ]
         };
 
         var data = {
             2021: [
                 ['Erling Haaland', 10],
-                ['Robert Lewandowski', 0],
-                ['Japan', 0],
-                ['Australia', 0],
-                ['Germany', 17],
-                ['Russia', 19],
-                ['China', 26],
-                ['Great Britain', 27],
-                ['United States', 0]
+                ['Robert Lewandowski', 5],
+                ['Lionel Andrés Messi', 5],
+                ['Cristiano Ronaldo', 4]
             ],
             2020: [
             ['Erling Haaland', 8],
-                ['Robert Lewandowski', 100],
-                ['Japan', 0],
-                ['Australia', 0],
-                ['Germany', 0],
-                ['Russia', 24],
-                ['China', 38],
-                ['Great Britain', 29],
-                ['United States', 46]
+                ['Robert Lewandowski', 5],
+                ['Lionel Andrés Messi', 3],
+                ['Cristiano Ronaldo', 4]
             ],
             2019: [
             ['Erling Haaland', 8],
-                ['Robert Lewandowski', 0],
-                ['Japan', 0],
-                ['Australia', 0],
-                ['Germany', 16],
-                ['Russia', 22],
-                ['China', 51],
-                ['Great Britain', 19],
-                ['United States', 36]
+                ['Robert Lewandowski', 15],
+                ['Lionel Andrés Messi', 3],
+                ['Cristiano Ronaldo', 6]
             ],
             2018: [
                 ['Erling Haaland', 0],
-                ['Robert Lewandowski', 0],
-                ['Japan', 16],
-                ['Australia', 17],
-                ['Germany', 0],
-                ['Russia', 27],
-                ['China', 32],
-                ['Great Britain', 0],
-                ['United States', 37]
+                ['Robert Lewandowski', 8],
+                ['Lionel Andrés Messi', 12],
+                ['Cristiano Ronaldo', 15]
             ],
             2017: [
                  ['Erling Haaland', 0],
-                ['Robert Lewandowski', 0],
-                ['Japan', 0],
-                ['Australia', 16],
-                ['Germany', 13],
-                ['Russia', 32],
-                ['China', 28],
-                ['Great Britain', 0],
-                ['United States', 36]
+                ['Robert Lewandowski', 5],
+                ['Lionel Andrés Messi', 6],
+                ['Cristiano Ronaldo', 1]
+              
             ]
         };
 
@@ -433,33 +385,13 @@
             flag: 197529,
             color: 'rgb(237, 242, 239)'
         }, {
-            name: 'Japan',
-            flag: 824748,
-            color: 'rgb(201, 36, 39)'
+            name: 'Lionel Andrés Messi',
+            flag: 197573,
+            color: 'rgb(14, 221, 248)'
         }, {
-            name: 'Australia',
-            flag: 824748,
-            color: 'rgb(0, 82, 180)'
-        }, {
-            name: 'Germany',
-            flag: 824725,
-            color: 'rgb(0, 0, 0)'
-        }, {
-            name: 'Russia',
-            flag: 824748,
-            color: 'rgb(240, 240, 240)'
-        }, {
-            name: 'China',
-            flag: 824748,
-            color: 'rgb(255, 217, 68)'
-        }, {
-            name: 'Great Britain',
-            flag: 824748,
-            color: 'rgb(0, 82, 180)'
-        }, {
-            name: 'United States',
-            flag: 824748,
-            color: 'rgb(215, 0, 38)'
+            name: 'Cristiano Ronaldo',
+            flag: 197463,
+            color: 'rgb(8, 236, 7)'
         }];
 
 
@@ -495,12 +427,12 @@
             tooltip: {
                 shared: true,
                 headerFormat: '<span style="font-size: 15px">{point.point.name}</span><br/>',
-                pointFormat: '<span style="color:{point.color}">\u25CF</span> {series.name}: <b>{point.y} medals</b><br/>'
+                pointFormat: '<span style="color:{point.color}">\u25CF</span> {series.name}: <b>{point.y} goles</b><br/>'
             },
             xAxis: {
                 type: 'category',
                 //maximo de paises mostrados
-                max: 4,
+                max: 3,
                 labels: {
                     useHTML: true,
                     animate: true,
@@ -523,7 +455,7 @@
             },
             yAxis: [{
                 title: {
-                    text: 'Gold medals'
+                    text: 'Goles'
                 },
                 showFirstLabel: false
             }],
