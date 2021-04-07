@@ -12,42 +12,221 @@
   <title>Cuartos</title>
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-    <div class="container-fluid ">
-      <a class="navbar-brand " href="index.html"><i class="far fa-futbol"></i></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-          </li>
-          <!-- <li class="nav-item">
-                <a class="nav-link" href="octavos.html">Octavos</a>
-              </li> -->
-          <li class="nav-item">
-            <a class="nav-link" href="cuartos.html">Cuartos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="semifinal.html">Semifinal</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="final.html">Final</a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="index.html">UEFA Champions League</a>
-          </li>
-        </ul>
+<style>
+  #container {
+      min-width: 310px;
+      max-width: 800px;
+      height: 400px;
+      margin: 0 auto
+  }
 
-        <span class="navbar-text">
-          <i class="far fa-futbol"></i></a>
-        </span>
+  .buttons {
+      min-width: 310px;
+      text-align: center;
+      margin-bottom: 1.5rem;
+      font-size: 0;
+      margin: 20px;
+  }
+
+  .buttons button {
+      cursor: pointer;
+      border: 1px solid silver;
+      border-right-width: 0;
+      background-color: #f8f8f8;
+      font-size: 1rem;
+      padding: 0.5rem;
+      outline: none;
+      transition-duration: 0.3s;
+      margin: 0;
+  }
+
+  .buttons button:first-child {
+      border-top-left-radius: 0.3em;
+      border-bottom-left-radius: 0.3em;
+  }
+
+  .buttons button:last-child {
+      border-top-right-radius: 0.3em;
+      border-bottom-right-radius: 0.3em;
+      border-right-width: 1px;
+  }
+
+  .buttons button:hover {
+      color: white;
+      background-color: rgb(158, 159, 163);
+      outline: none;
+  }
+
+  .buttons button.active {
+      background-color: #0051B4;
+      color: white;
+  }
+#con  {
+   height:    600PX;
+   background: url(ue.gif);
+}
+
+/* efectos del nav  */
+:root {
+--body-bg-color: #ecedee;
+--text-color: #2d2d30;
+--hr-color: #26292a;
+--timing-function: cubic-bezier(0.82, 0.2, 0.42, 1);
+--red: #e74c3c;
+}
+
+ul {
+list-style: none;
+}
+
+a {
+color: inherit;
+text-decoration: none;
+}
+
+body {
+margin: 30px 0;
+font: 22px sans-serif;
+background: var(--body-bg-color);
+color: var(--text-color);
+}
+
+hr {
+border-color: var(--hr-color);
+margin: 20px 0;
+}
+
+.menu {
+display: flex;
+justify-content: center;
+}
+
+.menu li {
+margin-right: 70px;
+}
+
+.menu a {
+position: relative;
+display: block;
+padding: 10px;
+overflow: hidden;
+transition: color 0s 0.25s var(--timing-function);
+}
+
+.menu a::before,
+.menu a::after {
+position: absolute;
+left: 0;
+width: 100%;
+}
+
+.menu a::before {
+content: '';
+top: 50%;
+transform: translate(-101%, -50%);
+height: 50%;
+z-index: 1;
+background: var(--text-color);
+transition: transform 0.5s var(--timing-function);
+}
+
+.menu a::after {
+content: attr(data-icon);
+font-family: "Font Awesome 5 Free";
+font-weight: 900;
+top: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100%;
+color: var(--text-color);
+opacity: 0;
+transition: opacity 0s 0.25s var(--timing-function);
+}
+
+.menu a:hover {
+color: transparent;
+}
+
+.menu a:hover::before {
+transform: translate(101%, -50%);
+}
+
+.menu a:hover::after {
+opacity: 1;
+}
+
+
+/* ANIMATIONS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.menu[data-animation="to-left"] a::before {
+transform: translate(101%, -50%);
+}
+
+.menu[data-animation="to-left"] a:hover::before {
+transform: translate(-101%, -50%);
+}
+
+
+/* FOOTER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-footer {
+position: absolute;
+bottom: 10px;
+right: 10px;
+font-size: 1rem;
+}
+
+.page-footer span {
+color: var(--red);
+}  
+
+</style>
+</head>
+
+<body>
+<div class="container-fluid bg-primary " id="con">
+
+</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light navbar sticky-top  ">
+  <div class="container-fluid ">
+      <a class="navbar-brand  " href="index.html"><i class="far fa-futbol"></i></a>
+      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end " id="navbarText">
+          <ul class="navbar-nav  mb-2 mb-lg-0 menu ">
+              <li class="nav-item  ">
+                  <a class="nav-link justify-content-center" href="index.html">UEFA Champions League</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <!-- <li class="nav-item">
+          <a class="nav-link" href="octavos.html">Octavos</a>
+        </li> -->
+      
+              <li class="nav-item">
+                  <a class="nav-link" href="cuartos.html">Cuartos</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="semifinal.html">Semifinal</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="final.html">Final</a>
+              </li>
+             
+          </ul>
+
+          <span class="navbar-text">
+              <i class="far fa-futbol"></i></a>
+          </span>
       </div>
-    </div>
-  </nav>
+  </div>
+</nav>
+
+
 
   <div class="container">
     <div class="row">
@@ -102,10 +281,7 @@
        <div class="col-12 col-md-6 mt-3">
                  <h4>Liverpool VS Real Madrid</h4>
                  <div class="col-12 col-md-6">
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/bo0H4Fi7Y6s" title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen></iframe>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/BW4OO3N1lec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                  </div>
        </div>
        <div class="col-12 col-md-6 mt-3">
@@ -161,9 +337,9 @@
 
   <div class="row footer  mt-3"></div>
   <div class="col-12 col-md-12 navbar  navbar-light  text-light nav justify-content-center"
-    style="background-color: #0b1270;">
+    style="background-color: #ecedee;">
     <footer id="footer">
-      <p>2021, Juan Peralta.</p>
+      <p style="color: #2d2d30;">2021, Juan Peralta.</p>
 
     </footer>
   </div>
