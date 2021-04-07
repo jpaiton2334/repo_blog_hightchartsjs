@@ -13,12 +13,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"&amp;gt>;
+
     <title>UEFA</title>
    
   
    </style>
    <style>
-
+@media screen and (max-width: 480px){
+    #con{
+        height: auto;
+    }
+    #conteiner{
+        width: auto;
+    }
+    #nav{
+        display:none;
+    }
+    .container{
+        width: auto;
+    }
+}
      
         #container {
             min-width: 310px;
@@ -198,7 +213,7 @@ hr {
     <div class="container-fluid bg-primary " id="con">
     
     </div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar sticky-top  ">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar sticky-top  " id="nav">
         <div class="container-fluid ">
             <a class="navbar-brand  " href="index.html"><i class="far fa-futbol"></i></a>
             <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
