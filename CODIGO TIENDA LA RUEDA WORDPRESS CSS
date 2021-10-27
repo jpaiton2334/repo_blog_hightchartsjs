@@ -1,0 +1,284 @@
+.woocommerce-mini-cart__empty-message:after{
+content: "No existen productos en el carrito!";
+  position: absolute;
+  top: 10px;
+  left:10px;
+  right: 0;
+  bottom:10px;
+  background: white;
+	
+}
+
+
+
+/* fotos inicio inclinadas */
+
+.elementor-container .elementor-column-gap-no{
+   
+    transform: skew(
+-9deg);
+    }
+/* boton woocomerce */
+.woocommerce ul.products li.product .button{
+	background-color:yelow;
+	color:white;
+	border-radius:15px;
+  margin-bottom:6%;
+ 
+}
+
+
+/* boton woocomerce HOVER */
+.woocommerce ul.products li.product .button:hover{
+	background-color:#F9B10C;
+	color:white;
+	border-radius:15px;
+	
+	
+}
+
+/*boton pagina producto unico */
+ .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt button:hover {
+	background-color: #F9B10C;
+    color: #fff;
+    border-radius: 15px;
+	
+	
+}
+
+
+/*boton pagina producto unico HOVER */
+.woocommerce div.product form.cart .button:hover{
+	background-color:#E9FA44;
+	color:white;
+}
+
+
+/* boton ver carrito */
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button{
+	background-color:#F9B10C;
+	color:white;
+}
+/* boton ver carrito Hover*/
+.woocommerce .woocommerce-error .button:hover, .woocommerce .woocommerce-info .button:hover, .woocommerce .woocommerce-message .button:hover, .woocommerce-page .woocommerce-error .button:hover, .woocommerce-page .woocommerce-info .button:hover, .woocommerce-page .woocommerce-message .button:hover{
+	background-color:#E9FA44;
+	color:white;
+}
+
+.woocommerce-message::before{
+	color:#23FF00;
+	
+}
+
+.woocommerce-message {
+    border-top-color: #000000;
+	background-color: #F4FFAE;
+}
+.woocommerce-error {
+    border-top-color: #fb000b;
+    background-color: aliceblue;
+}
+
+
+
+
+
+
+
+ /* cuadro cantidad de productos  */
+.woocommerce .quantity .qty{
+	height:38px;
+	border-color:black;
+	border-radius:10px;
+	margin-right:5px;
+	
+}
+
+ /* frase cantidad de stock  */
+.woocommerce div.product .stock{
+	color:gray
+}
+
+
+/* simbolo $ */
+.woocommerce-Price-currencySymbol{
+	color:#F9B10C;
+}
+
+/* precio */
+bdi{
+	color:gray;
+	
+}
+/*ancho y largo texto de titulo de productos */
+  @media screen and (max-width: 600px) and (min-width: 10px) {
+    .woocommerce ul.products li.product .woocommerce-loop-category__title, .woocommerce ul.products li.product .woocommerce-loop-product__title, .woocommerce ul.products li.product h3{
+			
+       // border: 5px solid darkblue;
+        height: 100px;
+        width: 150px;
+			text-align:center;
+				
+    }
+  }
+
+/*ancho y largo texto de titulo de productos */
+  @media screen and (max-width: 1900px) and (min-width: 601px) {
+    .woocommerce ul.products li.product .woocommerce-loop-category__title, .woocommerce ul.products li.product .woocommerce-loop-product__title, .woocommerce ul.products li.product h3{
+			
+       // border: 5px solid darkblue;
+        height: 100px;
+        
+			text-align:center;
+				
+    }
+  }
+
+
+/*botones pagina finalizar compra */
+.woocommerce #respond input#submit, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover {
+	
+	background-color:#F9B10C;
+	color:white;
+}
+/*botones pagina finalizar compra HOVER*/
+.woocommerce #respond input#submit.alt, .woocommerce a.button:hover.alt, .woocommerce button:hover.button:hover.alt, .woocommerce input.button:hover.alt button:hover{
+	background-color:#E9FA44;
+}
+/*ancho pagina finalizar compra */
+.full-width-content .container.grid-container {
+    max-width: 95%;
+}
+
+/*borde input pagina finalizar compra */
+.woocommerce form .form-row input.input-text, .woocommerce form .form-row textarea {
+	border-radius:10px;
+	
+}
+
+/*borde oscuro producto */
+.woocommerce ul.products li.first, .woocommerce-page ul.products li.first {
+    box-shadow: 0 3px 6px -5px rgb(0 0 0 / 10%), 0 4px 8px rgb(0 0 0 / 10%);
+    transition: all .3s ease-in-out;
+text-align:center;
+	
+}
+.woocommerce ul.products[class*=columns-] li.product:nth-child(2n), .woocommerce-page ul.products[class*=columns-] li.product:nth-child(2n){
+	    box-shadow: 0 3px 6px -5px rgb(0 0 0 / 10%), 0 4px 8px rgb(0 0 0 / 10%);
+    transition: all .3s ease-in-out;
+text-align:center;
+}
+
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product{
+	 box-shadow: 0 3px 6px -5px rgb(0 0 0 / 10%), 0 4px 8px rgb(0 0 0 / 10%);
+    transition: all .3s ease-in-out;
+text-align:center;
+}
+
+.woocommerce div.product form.cart .button{
+	background-color:#F9B10C;
+}
+
+@media screen and (max-width: 500px) and (min-width: 100px) {
+    .woo-variation-product-gallery {
+        width: 100% !important;
+    }
+    
+      .woocommerce #content div.product div.summary, .woocommerce div.product div.summary, .woocommerce-page #content div.product div.summary, .woocommerce-page div.product div.summary {
+    
+        width:100% !important;
+    }
+  }
+
+/*mostrando los resultados*/
+.woocommerce .woocommerce-result-count {
+  
+    margin-right: 20px;
+	  
+}
+
+.woocommerce .woocommerce-ordering select {
+    vertical-align: top;
+    margin-top:-10px;
+    border-radius: 20px;
+}
+/*formularario de suscripcion
+.wpcf7 form.sent .wpcf7-response-output{
+	border-width: 1px;
+	border-color:yellow;
+	color:white;
+	border-style:inset;
+	width:32%;
+	
+}*/
+
+	
+	@media screen and (max-width: 1900px) and (min-width: 100px) {
+   .wpcf7 form.sent .wpcf7-response-output{
+	border-width: 1px;
+	border-color:yellow;
+	color:white;
+	border-style:inset;
+	width:50%;
+  text-align:center;
+
+}
+
+		.wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output{
+			color:white;
+			border-width: 0px;
+			 text-align:center;
+			
+		}
+	/*cambio de texto del carrito cuando esta vacio*/
+.woocommerce-mini-cart__empty-message::after{
+content: "No existen productos en el carrito!";
+  position: absolute;
+  top: 10px;
+  left:10px;
+  right: 0;
+  bottom:10px;
+  background: white;
+	text-align:center;
+	color:red;
+}
+/*cambio de texto del carrito cuando esta vacio*/		
+.woocommerce-mini-cart__empty-message::before{
+content: "No existen productos en el carrito!";
+  position: absolute;
+  top: 10px;
+  left:10px;
+  right: 0;
+  bottom:10px;
+  text-align:center;
+	color:blue;
+	
+}		
+	/*margen a imagenes de pagina inicio*/	
+		.elementor-20 .elementor-element.elementor-element-adfaad2 .elementor-cta__button{
+			margin-top:400px;
+		}		
+		/*margen a imagenes de pagina inicio*/	
+		.elementor-20 .elementor-element.elementor-element-71a0c4b .elementor-cta__button{
+		margin-top:400px;
+		}		
+		
+	/*margen a imagenes de pagina inicio*/	
+		.elementor-20 .elementor-element.elementor-element-7296e98 .elementor-cta__button{
+			margin-top:400px;
+		}		
+			/*margen a imagenes de pagina inicio*/	
+		.elementor-20 .elementor-element.elementor-element-b41018c .elementor-cta__button{
+			
+			margin-top:400px;
+		}
+		/*margen a imagenes de pagina inicio*/		
+		.elementor-20 .elementor-element.elementor-element-5d86a64 .elementor-cta__button{
+				margin-top:400px;
+		}		
+	/*margen a imagenes de pagina inicio*/	
+		.elementor-20 .elementor-element.elementor-element-0fddb54 .elementor-cta__button{
+			margin-top:400px;
+		}
+		
+		
